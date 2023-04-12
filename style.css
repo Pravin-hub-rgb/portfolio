@@ -13,9 +13,7 @@
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,13 +21,18 @@
 }
 
 .sidebar nav {
-    padding: 45px;
-    color: rgb(1, 1, 1);
+    width: 100%;
 }
-
+.sidebar nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
 .sidebar nav li {
-    font-size: 30px;
     padding: 25px 0;
+    width: 92%;
 }
 
 .sidebar nav li a {
@@ -37,14 +40,15 @@
 }
 
 .btn {
-    padding: 9px 14px;
+    padding: 9px 1px;
     border-radius: 20px 0 20px 0;
     border: 1px solid rgb(116, 114, 114);
-    width: 80%;
+    width: 98%;
     text-align: center;
     cursor: pointer;
+    margin: auto;
     color: black;
-    font-size: 21px;
+    font-size: 1.6vw;
     display: inline-block;
     transition: all 0.8s;
 }
@@ -114,11 +118,11 @@
 }
 
 .hello {
-    font-size: 60px;
+    font-size: 3vw;
 }
 
 .name {
-    font-size: 30px;
+    font-size: 2.8vw;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -128,26 +132,22 @@
 }
 
 .about {
-    font-size: 40px;
+    font-size: 2.5vw;
 }
 
 .aboutMore {
     margin-top: 20px;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 22px;
+    font-size: 1.4vw;
 }
 
 .devImg img {
-    height: 50vh;
+    width: 23vw;
     grid-area: two;
 }
 
 .heading {
     margin-top: 50px;
-}
-
-#myskills>div {
-    height: 70vh;
 }
 
 .myskill-container {
@@ -272,10 +272,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
-    width: 300px;
+    height: 17vw;
+    width: 20vw;
+    min-width: 180px;
     display: flex;
-    margin: 10px 0;
+    margin: 10px;
     align-items: flex-end;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -306,7 +307,7 @@
 .card a {
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.7vw;
     background-color: #353b38;
     padding: 3px 5px;
     border-radius: 5px;

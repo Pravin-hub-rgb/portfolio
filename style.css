@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -43,12 +42,10 @@
     width: 80%;
     text-align: center;
     cursor: pointer;
-    /* font-weight: bold; */
     color: black;
     font-size: 21px;
     display: inline-block;
     transition: all 0.8s;
-    /* background-color: #9e9d9d; */
 }
 
 .active {
@@ -69,22 +66,19 @@
     z-index: -100;
 }
 
-.main {
-    /* background-color: yellow; */
-    width: 85vw;
-    /* background-color: rgb(36, 34, 34); */
-    /* z-index: 100; */
+.container {
+    width: 81vw;
+    margin-left: 19vw;
 }
 
-.container {
-    display: flex;
-    width: 80vw;
-    margin-left: 19vw;
+.main {
+    width: 98%;
 }
 
 .outer-container {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 95%;
@@ -93,14 +87,19 @@
 
 .inner-container {
     background-color: rgb(51, 50, 52);
-    height: 50vh;
-    /* border: 2px solid red; */
-    width: 80vw;
+    /* height: 50vh; */
+    width: 98%;
     color: white;
-    /* margin: 147px auto 0; */
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "one one one one one two";
 }
 
 .devInfo {
@@ -109,6 +108,7 @@
     flex-direction: column;
     padding: 20px;
     font-family: 'Source Code Pro', monospace;
+    grid-area: one;
 }
 
 .hello {
@@ -137,6 +137,7 @@
 
 .devImg img {
     height: 50vh;
+    grid-area: two;
 }
 
 .heading {
@@ -323,21 +324,25 @@
     flex-direction: column;
     align-items: center;
 }
-.contact-container>div>div{
+
+.contact-container>div>div {
     display: flex;
     align-items: center;
 }
-.contact-container>div>div a{
+
+.contact-container>div>div a {
     color: white;
     text-decoration: none;
     background-color: #616262;
     padding: 5px 10px;
     border-radius: 15px;
 }
-.contact-container>div>div a:hover{
+
+.contact-container>div>div a:hover {
     color: rgb(196, 192, 192);
     background-color: #505151;
 }
+
 .contact-container .card2 {
     height: 80px;
     width: 450px;
@@ -347,4 +352,84 @@
     height: 40px;
     width: auto;
     margin-right: 20px;
+}
+
+footer{
+    height: 300px;
+    width: auto;
+    border: 2px solid red;
+}
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100vw;
+        height: 56px;
+        display: block;
+        padding: 0 5px;
+    }
+
+    .sidebar nav {
+        margin: auto;
+        padding: 0;
+    }
+
+    .sidebar nav ul {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .sidebar nav ul li {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .main {
+        width: 100vw;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 9px 5px;
+    }
+
+    .container {
+        width: 98vw;
+        margin: 0 auto;
+    }
+
+    .outer-container {
+        width: 99%;
+        margin: auto;
+    }
+
+    .hello {
+        font-size: 1.8rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        font-size: 0.8rem;
+    }
+    .aboutMore{
+        margin-top: 11px;
+        font-size: 12px;
+    }
+
+    .devImg img {
+        width: 20vh;
+        height: auto;
+    }
+    .contact-container .card2 {
+        height: 80px;
+        width: auto;
+    }
+    .myskill-container div {
+        width: 85%;
+    }
+    #myskills>div {
+        height: auto;
+    }
 }

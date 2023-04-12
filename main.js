@@ -4,7 +4,7 @@ let navLinks = document.querySelectorAll('nav ul li a');
 window.onscroll = () => {
     container.forEach(con => {
         let top = window.scrollY;
-        let offset = con.offsetTop;
+        let offset = con.offsetTop - 300;
         let height = con.offsetHeight;
         let id = con.getAttribute('id');
         if (top >= offset && top < offset + height) {

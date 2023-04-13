@@ -19,7 +19,9 @@ const tabsBtn = document.querySelectorAll('.btn')
 const outerContainer = document.querySelectorAll('.outer-container')
 tabsBtn.forEach((tab, index) => {
     tab.addEventListener('click', () => {
-        tab.forEach(tab => { tab.classList.remove('active') });
+        tabsBtn.forEach(tab => { tab.classList.remove('active') });
         tab.classList.add('active');
+        outerContainer.forEach(container=>{container.classList.remove('show')})
+        outerContainer[index].classList.add('show');
     })
 })

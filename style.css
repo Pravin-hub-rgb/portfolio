@@ -24,20 +24,12 @@
 .sidebar nav {
     width: 100%;
 }
-.sidebar nav ul{
+.sidebar nav{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
-}
-.sidebar nav li {
-    padding: 25px 0;
-    width: 92%;
-}
-
-.sidebar nav li a {
-    text-decoration: none;
 }
 
 .btn {
@@ -52,6 +44,7 @@
     font-size: 1.7vw;
     display: inline-block;
     transition: all 0.8s;
+    margin: 20px 0;
 }
 
 .active {
@@ -83,20 +76,36 @@
 
 .outer-container {
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 95%;
-    margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.154);
+    margin: auto;
+    /* background-color: rgba(255, 255, 255, 0.154); */
     display: none;
+    animation: moving 0.5s ease;
+    border: 2px solid red;
 }
-
+ .show{
+    display: block;
+}
+.outer-container>div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes moving {
+    from{transform:translateX(50px);opacity:0;}
+    to{transform:translateX(0px);opacity:1;}
+}
 .inner-container {
-    background-color: rgb(51, 50, 52);
+    background-color: rgba(0, 0, 0, 0.363);
     /* height: 50vh; */
     width: 98%;
+    margin: auto;
     color: white;
     border-radius: 20px;
     display: flex;
@@ -406,21 +415,8 @@ footer{
         width: 99%;
         margin: auto;
     }
-
-    /* .hello {
-        font-size: 1.8rem;
-    }
-
-    .name {
-        font-size: 1.2rem;
-    }
-
-    .about {
-        font-size: 0.8rem;
-    } */
     .aboutMore{
         margin-top: 11px;
-        /* font-size: 12px; */
     }
 
     .devImg img {

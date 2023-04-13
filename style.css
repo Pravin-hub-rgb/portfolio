@@ -284,9 +284,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 17vw;
-    width: 20vw;
-    min-width: 180px;
+    height: 10vw;
+    width: 15vw;
+    min-width: 230px;
     display: flex;
     margin: 10px;
     align-items: flex-end;

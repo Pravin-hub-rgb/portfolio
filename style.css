@@ -88,8 +88,9 @@
     justify-content: center;
     align-items: center;
     width: 95%;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.024);
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.154);
+    display: none;
 }
 
 .inner-container {
@@ -100,6 +101,7 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+
 }
 
 .info-container {

@@ -14,6 +14,7 @@
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -21,26 +22,16 @@
     left: 0;
     z-index: 100;
 }
-
-.sidebar nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 .btn {
     padding: 9px 1px;
     border-radius: 20px 0 20px 0;
     border: 1px solid rgb(116, 114, 114);
-    width: 98%;
+    width: 90%;
     text-align: center;
     cursor: pointer;
     margin: auto;
     color: black;
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     display: inline-block;
     transition: all 0.8s;
     margin: 20px 0;
@@ -75,16 +66,10 @@
 
 .outer-container {
     height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     width: 95%;
     margin: auto;
-    /* background-color: rgba(255, 255, 255, 0.154); */
     display: none;
     animation: moving 0.5s ease;
-    border: 2px solid red;
 }
 
 .show {
@@ -390,22 +375,8 @@ footer {
         height: 56px;
     }
 
-    .sidebar nav {
-        display: flex;
-        justify-content: center;
+    .sidebar{
         flex-direction: row;
-        align-items: center;
-    }
-
-    .sidebar nav ul {
-        padding: 0 2px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .sidebar nav ul li {
-        margin: 0 auto;
-        padding: 5px 0;
     }
 
     .main {
@@ -414,8 +385,8 @@ footer {
 
     .btn {
         padding: 9px 2px;
-        width: 60%;
-        margin: auto;
+        width: 90%;
+        margin: 0 2px;
     }
 
     .container {

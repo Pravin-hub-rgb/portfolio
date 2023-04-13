@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +24,6 @@
 
 .sidebar nav {
     width: 100%;
-}
-.sidebar nav{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -87,20 +86,31 @@
     animation: moving 0.5s ease;
     border: 2px solid red;
 }
- .show{
+
+.show {
     display: block;
 }
-.outer-container>div{
+
+.outer-container>div {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @keyframes moving {
-    from{transform:translateX(50px);opacity:0;}
-    to{transform:translateX(0px);opacity:1;}
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
+
 .inner-container {
     background-color: rgba(0, 0, 0, 0.363);
     /* height: 50vh; */
@@ -301,11 +311,11 @@
 }
 
 .card:nth-of-type(1) {
-    background-image: url('./images/web1.png');
+    background-image: url('./images/web2.png');
 }
 
 .card:nth-of-type(2) {
-    background-image: url('./images/web2.png');
+    background-image: url('./images/web3.png');
 }
 
 .card:nth-of-type(3) {
@@ -316,18 +326,17 @@
     background-image: url('./images/web4.png');
 }
 
-.card a {
+.card span {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     background-color: #353b38;
     padding: 3px 5px;
     border-radius: 5px;
     margin-bottom: 5px;
-}
-
-.card a:hover {
-    color: #a6aaa8;
+    width: 90%;
+    text-align: center;
 }
 
 .contact-container {
@@ -369,11 +378,12 @@
     margin-right: 20px;
 }
 
-footer{
+footer {
     height: 300px;
     width: auto;
     border: 2px solid red;
 }
+
 @media (max-width: 700px) {
     .sidebar {
         width: 100vw;
@@ -383,8 +393,10 @@ footer{
     .sidebar nav {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
     }
+
     .sidebar nav ul {
         padding: 0 2px;
         display: grid;
@@ -401,8 +413,8 @@ footer{
     }
 
     .btn {
-        padding: 9px 1px;
-        width: 85%;
+        padding: 9px 2px;
+        width: 60%;
         margin: auto;
     }
 
@@ -415,7 +427,8 @@ footer{
         width: 99%;
         margin: auto;
     }
-    .aboutMore{
+
+    .aboutMore {
         margin-top: 11px;
     }
 
@@ -423,10 +436,12 @@ footer{
         width: 20vh;
         height: auto;
     }
+
     .contact-container .card2 {
         height: 80px;
         width: auto;
     }
+
     .myskill-container div {
         width: 85%;
     }

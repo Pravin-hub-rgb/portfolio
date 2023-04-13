@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,13 +25,15 @@
 .sidebar nav {
     width: 100%;
 }
-.sidebar nav ul{
+
+.sidebar nav ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
+
 .sidebar nav li {
     padding: 25px 0;
     width: 92%;
@@ -82,14 +85,13 @@
 }
 
 .outer-container {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 95%;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.024);
+    margin: 90px auto;
 }
 
 .inner-container {
@@ -100,6 +102,7 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+    padding: 20px 0;
 }
 
 .info-container {
@@ -153,13 +156,16 @@
 
 .myskill-container {
     display: block;
+    /* padding: 90px 0; */
+    /* height: 40vw; */
+    margin: auto;
 }
 
 .myskill-container h2,
 .port-container h2,
 .contact-container h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4vw;
     margin-top: 20px;
 }
 
@@ -273,9 +279,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 17vw;
-    width: 20vw;
-    min-width: 180px;
+    height: 10vw;
+    width: 15vw;
+    min-width: 230px;
     display: flex;
     margin: 10px;
     align-items: flex-end;
@@ -290,11 +296,11 @@
 }
 
 .card:nth-of-type(1) {
-    background-image: url('./images/web1.png');
+    background-image: url('./images/web2.png');
 }
 
 .card:nth-of-type(2) {
-    background-image: url('./images/web2.png');
+    background-image: url('./images/web1.png');
 }
 
 .card:nth-of-type(3) {
@@ -305,14 +311,17 @@
     background-image: url('./images/web4.png');
 }
 
-.card a {
+.card span {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     background-color: #353b38;
     padding: 3px 5px;
     border-radius: 5px;
     margin-bottom: 5px;
+    width: 90%;
+    text-align: center;
 }
 
 .card a:hover {
@@ -334,7 +343,8 @@
     align-items: center;
 }
 
-.contact-container>div>div a {
+.contact-container>div>div a,
+.contact-container>div>div p {
     color: white;
     text-decoration: none;
     background-color: #616262;
@@ -358,11 +368,12 @@
     margin-right: 20px;
 }
 
-footer{
+footer {
     height: 300px;
     width: auto;
     border: 2px solid red;
 }
+
 @media (max-width: 700px) {
     .sidebar {
         width: 100vw;
@@ -374,6 +385,7 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
     .sidebar nav ul {
         padding: 0 2px;
         display: grid;
@@ -416,7 +428,7 @@ footer{
     .about {
         font-size: 0.8rem;
     } */
-    .aboutMore{
+    .aboutMore {
         margin-top: 11px;
         /* font-size: 12px; */
     }
@@ -425,10 +437,12 @@ footer{
         width: 20vh;
         height: auto;
     }
+
     .contact-container .card2 {
         height: 80px;
         width: auto;
     }
+
     .myskill-container div {
         width: 85%;
     }

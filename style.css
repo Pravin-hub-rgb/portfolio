@@ -169,7 +169,7 @@
 .port-container h2,
 .contact-container h2 {
     text-align: center;
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     margin-top: 20px;
 }
 
@@ -350,6 +350,7 @@
     background-color: #616262;
     padding: 5px 10px;
     border-radius: 15px;
+    font-size: 2vw;
 }
 
 .contact-container>div>div a:hover {
@@ -367,13 +368,6 @@
     width: auto;
     margin-right: 20px;
 }
-
-footer {
-    height: 300px;
-    width: auto;
-    border: 2px solid red;
-}
-
 @media (max-width: 700px) {
     .sidebar {
         width: 100vw;

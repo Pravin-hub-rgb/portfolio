@@ -23,6 +23,7 @@
     left: 0;
     z-index: 100;
 }
+
 .btn {
     padding: 9px 1px;
     border-radius: 20px 0 20px 0;
@@ -160,16 +161,16 @@
 
 .myskill-container {
     display: block;
-    /* padding: 90px 0; */
-    /* height: 40vw; */
     margin: auto;
 }
-
+.myskill-container h3{
+    font-size: 1.8vw;
+}
 .myskill-container h2,
-.port-container h2,
+.pro-container h2,
 .contact-container h2 {
     text-align: center;
-    font-size: 2.8vw;
+    font-size: 2.7vw;
     margin-top: 20px;
 }
 
@@ -268,15 +269,15 @@
     }
 }
 
-.port-container {
+.pro-container {
     display: block;
     height: auto;
 }
 
-.port-container div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.pro-container div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .card {
@@ -285,9 +286,8 @@
     background-repeat: no-repeat;
     height: 10vw;
     width: 15vw;
-    min-width: 230px;
     display: flex;
-    margin: 10px;
+    margin: 10px auto;
     align-items: flex-end;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -350,7 +350,7 @@
     background-color: #616262;
     padding: 5px 10px;
     border-radius: 15px;
-    font-size: 2vw;
+    font-size: 1.4vw;
 }
 
 .contact-container>div>div a:hover {
@@ -368,13 +368,14 @@
     width: auto;
     margin-right: 20px;
 }
+
 @media (max-width: 700px) {
     .sidebar {
         width: 100vw;
         height: 56px;
     }
 
-    .sidebar{
+    .sidebar {
         flex-direction: row;
     }
 
@@ -397,8 +398,17 @@
         width: 99%;
         margin: auto;
     }
-
+    .hello{
+        font-size: 7vw;
+    }
+    .name{
+        font-size: 6vw;
+    }
+    .about{
+        font-size: 4vw;
+    }
     .aboutMore {
+        font-size: 2.3vw;
         margin-top: 11px;
     }
 
@@ -406,10 +416,31 @@
         width: 20vh;
         height: auto;
     }
-
+    .myskill-container h3{
+        font-size: 3vw;
+    }
+    .myskill-container h2,
+    .pro-container h2,
+    .contact-container h2 {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+    
     .contact-container .card2 {
         height: 80px;
         width: auto;
+    }
+    .contact-container > div > div a, .contact-container > div > div p{
+        font-size: 2.5vw;
+    }
+    .pro-container div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        height: 20vw;
+        width: 30vw;
     }
 
     .myskill-container div {

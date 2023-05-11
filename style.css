@@ -212,12 +212,12 @@ a{
 }
 
 .html {
-    width: 70%;
+    width: 40%;
     animation: html 3s;
 }
 
 .css {
-    width: 50%;
+    width: 40%;
     animation: css 3s;
 }
 
@@ -237,7 +237,7 @@ a{
     }
 
     100% {
-        width: 70%;
+        width: 40%;
     }
 }
 
@@ -247,7 +247,7 @@ a{
     }
 
     100% {
-        width: 50%;
+        width: 40%;
     }
 }
 
